@@ -74,7 +74,7 @@ public class StatisticsTest {
     @Test
     public void topScorersPalauttaaOikein() {
         List<Player> topScorers = stats.topScorers(3);
-        assertEquals(topScorers.size(), 4);
+        assertEquals(topScorers.size(), 3);
         int score = 9999;
         for (Player p : topScorers) {
             int pScore = p.getPoints();
