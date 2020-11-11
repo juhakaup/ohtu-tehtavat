@@ -22,11 +22,16 @@ public class Stepdefs {
     @Then("the value should be {int}")
     public void theValueShouldBe(Integer val) {
         assertEquals(val.intValue(), counter.value());
-    }
+    }  
 
     @When("it is incremented by {int}")
     public void itIsIncrementedBy(Integer val) {
          counter.increment(val);       
-    }    
+    } 
+
+    @When("it is reset")
+    public void itIsReset() {
+        counter.reset();
+    }
 
 }
