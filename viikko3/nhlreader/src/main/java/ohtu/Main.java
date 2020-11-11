@@ -30,8 +30,8 @@ public class Main {
         Collections.sort(playersFIN, Collections.reverseOrder());
 
         for (Player p : playersFIN) {
-            String format = "%-20s %3s %2d + %2d = %2d %n";
-            System.out.printf(format, p.getName(), p.getTeam(), p.getAssists(), p.getClass(), p.getScore());
+            String format = "%-20s %-5s %2s + %2s = %2s %n";
+            System.out.printf(format, p.getName(), p.getTeam(), p.getGoals(), p.getAssists(), p.getScore());
         }
         
     }
