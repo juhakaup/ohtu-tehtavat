@@ -110,7 +110,7 @@ public class KauppaTest {
 
         // tarkistetaan että tässä vaiheessa viitegeneraattorin metodia seuraava()
         // on kutsuttu kolme kertaa        
-        verify(mockViite, times(3)).seruaava();
+        verify(mockViite, times(5)).seruaava();
     }
 
     @Test
